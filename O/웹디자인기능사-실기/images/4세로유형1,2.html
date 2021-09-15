@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>대한은행</title>
+        <style>
+            * {margin: 0; padding: 0;}
+            .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+            /* 레이아웃 */
+            #wrap {width: 1200px;  margin: 0 auto; text-align: center}
+            #side {float:left; width: 300px; height: 850px; background: #ccc;}
+            #content {float:left; width: 900px; height: 850px; background: #ddd;}
+
+            /* header */
+            /* #side .logo {width: 300px; height: 150px; background: #999;}
+            #side .nav {width: 300px; height: 700px; background: #888;}
+            #side .nav li {text-align: center; background-color: #b39ddb; }
+            #side .nav li a {padding: 10px; display: block; color: #fff; background-color: rgba(0,0,0,0.3);}
+            #side .nav li a:hover {background-color: rgba(0,0,0,0.4);} 
+            #side .nav li ul.submenu {display: none; background-color: #9575cd; }  */
+            
+            /*header 2*/
+            #side .logo {width: 300px; height: 150px; background: #999;}
+            #side .nav {width: 300px; height: 700px; background: #888;}
+            #side .nav li {text-align: center; background-color: #b39ddb; position:relative;}
+            #side .nav li a {padding: 10px; display: block; color: #fff; background-color: rgba(0,0,0,0.3);}
+            #side .nav li a:hover {background-color: rgba(0,0,0,0.4);} 
+            #side .nav li ul.submenu {display: none; position: absolute; right:-200px; top:0; background-color: #9575cd; width:200px;} 
+            
+            /* banner */
+            #banner {width: 900px; height: 450px; background: #777;}
+
+            /* contents */ 
+            #contents > div {float:left; width: 33.3333%; height: 300px;} 
+            #contents > div.cont1 {background: #444;}
+            #contents > div.cont2 {background: #666;}
+            #contents > div.cont3 {background: #555;}
+
+            /*footer */
+            #footer .foot1 {float:left; width: 200px; height: 100px; background: #333;}
+            #footer .foot2 {float:left; width: 700px; height: 50px; background: #222;}
+            #footer .foot3 {float:left; width: 700px; height: 50px; background: #111;}
+
+        </style>
+        <!-- <link href="../css/레이아웃2.css" type="text/css" rel="stylesheet"/> -->
+
+    </head>    
+    <body>
+        <div id="wrap" class="clearfix">
+            <aside id="side">
+                <h1 class="logo">로고</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Menu1</a>
+                            <ul class="submenu">
+                                <li><a href="#">SubMenu1</a></li>
+                                <li><a href="#">SubMenu2</a></li>
+                                <li><a href="#">SubMenu3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu2</a>
+                            <ul class="submenu">
+                                <li><a href="#">SubMenu1</a></li>
+                                <li><a href="#">SubMenu2</a></li>
+                                <li><a href="#">SubMenu3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu3</a>
+                            <ul class="submenu">
+                                <li><a href="#">SubMenu1</a></li>
+                                <li><a href="#">SubMenu2</a></li>
+                                <li><a href="#">SubMenu3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu4</a>
+                            <ul class="submenu">
+                                <li><a href="#">SubMenu1</a></li>
+                                <li><a href="#">SubMenu2</a></li>
+                                <li><a href="#">SubMenu3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section id="content" >
+                <section id="banner"><h2>이미지 슬라이드</h2></section>
+                
+                <section id="contents">
+                    <div class="cont1"><h3>공지사항</h3></div>
+                    <div class="cont2"><h3>갤러리</h3></div>
+                    <div class="cont3"><h3>팝업</h3></div>
+                </section>
+                
+                <footer id="footer">
+                    <div class="foot1"><h3>로고</h3></div>                    
+                    <div class="foot2"><h3>하단메뉴</h3></div>                    
+                    <div class="foot3"><h3>Copyright</h3></div>                    
+                </footer>
+            </section>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+           $(".nav > ul > li").hover(
+                function(){
+                    $(this).find(".submenu").stop().slideDown();        
+                },function(){
+                    $(this).find(".submenu").stop().slideUp();
+            });
+        </script>
+    </body>
+</html>
+
+15~21 세로 1 css    아래로나열
+23~29 세로 2 css    옆으로나열
+54~83번 세로 html
+106~113번 세로 JS
