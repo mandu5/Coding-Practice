@@ -1,11 +1,10 @@
-const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
+const images = ["0.jpg", "1.jpg", "2.jpg",];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const chosenImg = images[Math.floor(Math.random() * images.length)];
 
 const bgImg = document.createElement("img"); //HTML in JS
 
-bgImage.src = `img/${chosenImage}`;
+bgImg.src = `img/${chosenImg}`;
 
-document.body.appendChild(); //js to HTML body
-
+document.body.appendChild(bgImg); //js to HTML body
 
