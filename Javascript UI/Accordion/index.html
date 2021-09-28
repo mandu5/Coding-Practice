@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion | Vanilla Javascript</title>
+    <link href= "css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class = "accordion">
+        <div class = "contentBx">
+            <div class = "label">List One</div>
+            <div class = "content">
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            </div>
+        </div>
+        <div class = "contentBx">
+            <div class = "label">List two</div>
+            <div class = "content">
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            </div>
+        </div>
+        <div class = "contentBx">
+            <div class = "label">List three</div>
+            <div class = "content">
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            </div>
+        </div>
+        <div class = "contentBx">
+            <div class = "label">List four</div>
+            <div class = "content">
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName("contentBx");
+
+        for ( i = 0; i<accordion.length; i++ ){
+            accordion[i].addEventListener("click", function(){
+                this.classList.toggle("active")
+            })
+        }
+    </script>
+</body>
+</html>
