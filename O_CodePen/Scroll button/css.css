@@ -1,0 +1,99 @@
+/* RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/* FUNDAMENTAL */
+
+body {
+  background-color: #fcfcfc;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  text-align: center;
+}
+
+nav .menus {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+nav .menus .menu {
+  color: black;
+  font-size: 1em;
+  display: inline;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+nav .menus .menu a {
+  background-color: #fcfcfc;
+  color: #999;
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+nav .menus .menu:last-child {
+  margin-right: 0;
+}
+
+section {
+  position: relative;
+  background-color: coral;
+  width: 100%;
+  height: 100vh;
+}
+
+section h1 {
+  position: absolute;
+  color: #ffffff;
+  letter-spacing: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+#section_1 {
+  background-color: skyblue;
+}
+
+#section_2 {
+  background-color: coral;
+}
+
+#section_3 {
+  background-color: darkcyan;
+}
+
+#section_4 {
+  background-color: lightslategrey;
+}
+
+#section_5 {
+  background-color: lightsteelblue;
+}
