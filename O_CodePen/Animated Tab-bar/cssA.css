@@ -1,21 +1,16 @@
 html {
-
     box-sizing: border-box;
     --bgColorMenu : #1d1d27;
     --duration: .7s;    
-
 }
 
 html *,
 html *::before,
 html *::after {
-
     box-sizing: inherit;
-
 }
 
 body{
-    
     margin: 0;
     display: flex;
     height: 100vh;
@@ -25,11 +20,9 @@ body{
     background-color: #ffb457;
     -webkit-tap-highlight-color: transparent;
     transition: background-color var(--duration);
-
 }
 
 .menu{
-
     margin: 0;
     display: flex;
     /* Works well with 100% width  */
@@ -40,11 +33,9 @@ body{
     align-items: center;
     justify-content: center;
     background-color: var(--bgColorMenu);
-    
 }
 
 .menu__item{
-    
     all: unset;
     flex-grow: 1;
     z-index: 100;
@@ -57,11 +48,9 @@ body{
     justify-content: center;
     padding: 0.55em 0 0.85em;
     transition: transform var(--timeOut , var(--duration));
-    
 }
 
 .menu__item::before{
-    
     content: "";
     z-index: -1;
     width: 4.2em;
@@ -70,25 +59,18 @@ body{
     position: absolute;
     transform: scale(0);
     transition: background-color var(--duration), transform var(--duration);
-    
 }
 
-
 .menu__item.active {
-
     transform: translate3d(0, -.8em , 0);
-
 }
 
 .menu__item.active::before{
-    
     transform: scale(1);
     background-color: var(--bgColorItem);
-
 }
 
 .icon{
-    
     width: 2.6em;
     height: 2.6em;
     stroke: white;
@@ -98,27 +80,19 @@ body{
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-dasharray: 400;
-    
 }
 
 .menu__item.active .icon {
-
     animation: strok 1.5s reverse;
-    
 }
 
 @keyframes strok {
-
     100% {
-
         stroke-dashoffset: 400;
-
     }
-
 }
 
 .menu__border{
-
     left: 0;
     bottom: 99%;
     width: 10.9em;
@@ -128,15 +102,12 @@ body{
     will-change: transform;
     background-color: var(--bgColorMenu);
     transition: transform var(--timeOut , var(--duration));
-    
 }
 
 .svg-container {
-
     width: 0;
     height: 0;
 }
-
 
 @media screen and (max-width: 50em) {
     .menu{
