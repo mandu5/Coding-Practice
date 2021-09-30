@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards hover</title>
+    <link href = "style.css" type = "text/css" rel = "stylesheet">
+</head>
+    <body>
+       <div class = "container">
+           <div class = "card">
+               <div class = "content">
+                    <h2>01</h2>
+                    <h3>Card one</h3>
+                    <p> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <a href ="">Read more</a>
+               </div>
+           </div>
+           <div class = "card">
+                <div class = "content">
+                    <h2>02</h2>
+                    <h3>Card two</h3>
+                    <p> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <a href ="">Read more</a>
+                </div>
+            </div>    
+            <div class = "card">
+                <div class = "content">
+                    <h2>03</h2>
+                    <h3>Card three</h3>
+                    <p> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <a href ="">Read more</a>
+                </div>
+            </div>
+        </div>
+        <script src ="js.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </body>
+</html>
