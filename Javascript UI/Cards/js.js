@@ -1,4 +1,4 @@
-var VanillaTilt = (function () {
+let VanillaTilt = (function () {
     'use strict';
     
     class VanillaTilt {
@@ -449,7 +449,7 @@ var VanillaTilt = (function () {
         };
     
         let newSettings = {};
-        for (var property in defaultSettings) {
+        for (let property in defaultSettings) {
           if (property in settings) {
             newSettings[property] = settings[property];
           } else if (this.element.hasAttribute("data-tilt-" + property)) {
