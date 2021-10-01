@@ -6,7 +6,7 @@
 .breadcrumbs__item {
     display: inline-block;
 }
- 
+
 .breadcrumbs__item:not(:last-of-type)::after {
     content: '\203a';
     margin: 0 5px;
