@@ -3,10 +3,12 @@
 ### Javascript
 
 <!-- > **ETC**-->
-> [Javascript_UI] 
+> * [Full_Webpage] 
 > 
-> [Javascript_effects]
+> * [Javascript_UI] 
 > 
-> [Simple practice]
+> * [Javascript_effects]
+> 
+> * [Simple practice]
 > 
 ---
