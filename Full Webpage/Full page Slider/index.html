@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Slider</title>
+        <link href = "style.css" type = "text/css" rel = "stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href = "#" class = "logo">Products.</a>
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "#">Store</a></li>
+                <li><a href = "#">Contact</a></li>
+            </ul>
+        </header>
+        <section class = "banner">
+            <div class = "imgBx">
+                <img src = "img1.jpg" class = "active">
+                <img src = "img2.jpg">
+                <img src = "img3.jpg">
+                <img src = "img4.jpg">
+            </div>
+
+            <div class = "contentBx">
+                <div class = "active">
+                    <h2>Slide Text One</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <a href = "#">Details</a>
+                </div>
+                <div>
+                    <h2>Slide Text Two</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <a href = "#">Details</a>
+                </div>
+                <div>
+                    <h2>Slide Text Three</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <a href = "#">Details</a>
+                </div>
+                <div>
+                    <h2>Slide Text four</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <a href = "#">Details</a>
+                </div>
+            </div>
+            <ul class = "controls">
+                <li onclick = "prevSlide();PrevSlideText()"></li>
+                <li onclick = "nextSlide();nextSlideText()"></li>
+            </ul>
+        </section>
+        <script src = "js.js"></script>
+    </body>
+</html>

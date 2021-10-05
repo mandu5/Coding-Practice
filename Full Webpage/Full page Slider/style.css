@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f00;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 30px 100px;
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 40px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+    background-position: center;
+}
+
+.banner .imgBx img.active {
+    opacity: 1;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 80px;
+}
+
+.controls li {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.controls li:hover {
+    background: #ffeb3b;
+}
+
+.controls li:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    heighT: 20px;
+    border-left: 3px solid #111;
+    border-bottom: 3px solid #111;
+    transform: rotate(45deg);
+} 
+
+.controls li:nth-child(2):before {
+    transform: rotate(225deg);
+}
+
+.contentBx {
+    position: absolute;
+    bottom: 0;
+    max-width: 700px;
+}
+
+.contentBx div {
+    display: none;
+}
+
+.contentBx div.active {
+    display: block;
+    padding-left: 30px;
+    padding-left: 100px;
+    background: rgba(0,0,0,0.2);
+}
+
+.contentBx div h2 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.contentBx div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.contentBx div a {
+    color: #111;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    margin-top:10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
