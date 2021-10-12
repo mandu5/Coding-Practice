@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toggle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.toggle span {
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    transition: 0.5s;
+    background: #262626;
+    transform: translateX(-50%);
+}
+
+.toggle span:nth-child(1) {
+    top: 30%;
+    left: 50%;
+}
+.toggle span:nth-child(2) {
+    bottom: 30%;
+    left: 50%;
+}
+.toggle.active span:nth-child(1) {
+    top: 45%;
+    left: 50%;
+    width: 60%;
+}
+.toggle.active span:nth-child(2) {
+    bottom: 49%;
+    left: 50%;
+    width: 60%;
+}
+.toggle.active span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+.toggle.active span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.toggle.active span {
+    background: #000;
+}
+
+.toggle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 4px;
+    background: #262626;
+    transition: 0.5s;
+    z-index: -1; 
+}
+
+.toggle.active:before {
+    width: 100%;
+    height: 100%;
+
+}
