@@ -8,7 +8,9 @@
 > * [Javascript_UI] 
 > 
 > * [Javascript_effects]
-> 
+>
+> * [Mini projects]
+>  
 > * [Simple practice]
 > 
 ---
