@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 8em;
+}
+
+h2 .z-layer:first-child {
+    color: #1e6b17;
+}
+
+h2 .z-layer {
+    color: #1c201c;
+}
+
+.img {
+    position: relative;
+    max-width: 200px;
+    margin: 30px;
+}
+
+.z-layer:first-child {
+    filter: brightness(1);
+}
+.z-layer{
+    filter: brightness(0.7);
+}
