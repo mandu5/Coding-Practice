@@ -61,7 +61,7 @@ body {
     transform: translate(-50%, -50%);
     width: 50%;
     height: 4px;
-    background: #262626;
+    background: rgb(40, 152, 204);
     transition: 0.5s;
     z-index: -1; 
 }
