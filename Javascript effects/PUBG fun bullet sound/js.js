@@ -1,4 +1,4 @@
-document.addEventListener("click", function(e){
+document.addEventListener("click", (e) => {
     let body = document.querySelector('body');
     let bullet = document.createElement('span');
     let x = e.offsetX;

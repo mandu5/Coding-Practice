@@ -10,13 +10,13 @@ const animation = anime.timeline({
 
 animation 
 .add({
-    rotate: function(){
+    rotate: () => {
         return anime.random(-360,360)
     },
-    translateX: function(){
+    translateX: () => {
         return anime.random(-500,500)
     },
-    translateY: function(){
+    translateY: () => {
         return anime.random(-500,500)
     },
     duration: 5000,

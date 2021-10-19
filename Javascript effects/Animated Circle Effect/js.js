@@ -7,7 +7,7 @@ for(let i = 0; i < element.length; i++){
     element[i].style.transform = "rotate("+i*18+"deg)"
 }
 
-document.addEventListener("mousemove", function(e){
+document.addEventListener("mousemove", (e) => {
     text.style.left = e.pageX + "px";
     text.style.top = e.pageY + "px";
 })

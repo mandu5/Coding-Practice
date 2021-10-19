@@ -8,13 +8,13 @@ for (let i = 0; i <= 100; i++) {
 function animateBlocks(){
     anime({
         targets: ".block",
-        translateX: function(){
+        translateX: () => {
             return anime.random(-700, 700);
         },
-        translateY: function(){
+        translateY: () => {
             return anime.random(-500, 500);
         },
-        scale: function(){
+        scale: () => {
             return anime.random(1, 5);
         },
 

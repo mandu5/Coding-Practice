@@ -1,4 +1,4 @@
-document.addEventListener("mousemove", function(e) {
+document.addEventListener("mousemove", (e) => {
     let body = document.querySelector("body");
     let heart = document.createElement("span");
     let x = e.offsetX;
@@ -10,7 +10,7 @@ document.addEventListener("mousemove", function(e) {
     heart.style.height = 20 + size + "px";
     body.appendChild(heart);
 
-    setTimeout(function(){
+    setTimeout(() => {
         heart.remove();
     },1500);
 })
