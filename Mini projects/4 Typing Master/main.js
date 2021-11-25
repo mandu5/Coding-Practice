@@ -64,7 +64,7 @@ function checkMatch () {
         }
         score++;
         scoreDisplay.innerText = score;
-        wordInput.value = "";
+        time = GAME_TIME
         const randomIndex = Math.floor(Math.random() * words.length);
         wordDisplay.innerText = words[randomIndex];
     }
