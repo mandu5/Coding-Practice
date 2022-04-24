@@ -1,8 +1,7 @@
 ## 🔥 Coding Practice
 
-### Javascript
+### Vanilla Javascript
 
-<!-- > **ETC**-->
 > * [Full_Webpage] 
 > 
 > * [Javascript_UI] 
@@ -13,4 +12,8 @@
 >  
 > * [Simple practice]
 > 
----
+
+### React Functions
+
+> * [Search_Options]
+>
