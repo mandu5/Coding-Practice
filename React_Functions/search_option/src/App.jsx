@@ -15,8 +15,8 @@ import Table from "./Table";
 //         onChange={(e) => setQuery(e.target.value.toLowerCase())}
 //       />
 //       <ul className="list">
-//         {Users.filter((asd) =>
-//           asd.first_name.toLowerCase().includes(query)
+//         {Users.filter((item) =>
+//           item.first_name.toLowerCase().includes(query)
 //         ).map((user) => (
 //           <li className="listItem" key={user.id}>
 //             {user.first_name}
